@@ -1,11 +1,9 @@
-znam = int(input())
-pervoe = int(input())
-n = int(input())
-i = 1
+f1 = f2 = 1
 
-while i < n + 1: 
-    j = i - 1
-    q = znam ** j
-    bn = pervoe * q
-    print (bn)
-    j += 1
+n = int(input())
+
+print(f1, f2, end=' ')
+
+for i in range(2, n):
+    f1, f2 = f2, f1 + f2
+    print(f2, end=' ')
